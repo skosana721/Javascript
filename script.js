@@ -1,10 +1,10 @@
-function difference(n)
- {
-    if (n <= 20)
-        return 20 - n;
-    else
-        return (n - 20) / 2;
- }
-
-console.log(difference(40));
-console.log(difference(10));
+var array = [2, 3, 5],
+    s = 0,
+    p = 1,
+    i;
+for (i = 0; i < array.length; i += 1) 
+   {
+    s += array[i];
+    p *= array[i];
+    }
+console.log('Sum : '+s + ' Product :  ' +p); 
